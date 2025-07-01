@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('img.PNG') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo span {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+
+h1 span {
+    color: #00FFFF;
+    text-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+}
+
+p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    background: transparent;
+    color: #00FFFF;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #00FFFF;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #00FFFF;
+    color: black;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+}
+
+/* Info Section */
+#info, #how-it-works {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#info h2, #how-it-works h2 {
+    color: #00FFFF;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+.box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.step span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00FFFF;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* LOGIN PAGE STYLES */
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+.login-body {
+    background: url('img6.PNG') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Side - Image Section */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right Side - Login Form */
+.login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    border-radius: 10px;
+}
+
+/* Form Elements */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Button */
+button.btn {
+    width: 100%;
+    padding: 14px;
+    background: #00FFFF;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+button.btn:hover {
+    background: #00b3b3;
+}
+
+/* Links */
+.back-btn {
+    margin-top: 15px;
+    color: #00FFFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: #00b3b3;
+}
+
+/* Sign Up Page Specific Styles */
+.signup-page {
+    background: url('img7.PNG') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.signup-page .form-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+}
+
+.signup-page h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.signup-page input, 
+.signup-page select, 
+.signup-page button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+
+.signup-page input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signup-page input:focus, 
+.signup-page select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+/* Sign Up Button */
+.signup-page button.btn {
+    background: #00FFFF;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-page button.btn:hover {
+    background: #00b3b3;
+}
+
+/* Link styles */
+.signup-page a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.signup-page a:hover {
+    color: #00b3b3;
+}
+
+/* Back button */
+.signup-page .back-btn {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* Mobile responsiveness for the sign-up page */
+@media (max-width: 768px) {
+    .signup-page .form-container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .signup-page h1 {
+        font-size: 20px;
+    }
+}
+/* Upload Css */
+
+/* Fullscreen background image */
+/* Ensure the body and html elements take full height */
+/* Ensure the body and html elements take full height */
+.upload-container.html, .upload-container.body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .upload-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Ensure full width */
+    background: url('img8.PNG') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire screen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: brightness(0.8);
+    background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  }
+  
+  /* Main title styling - Corrected selector */
+  .upload-container h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 5px black;
+  }
+  
+  /* File input styling */
+  input[type="file"] {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  input[type="file"]::file-selector-button {
+    background: #69f0ff;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Submit button styling */
+  button {
+    background: #69f0ff;
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px #00FFFF;
+  }
+  
+  button:hover {
+    background: #00b3b3;
+  }
+  
+  /* Result text */
+  .result {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 8px #00FFFF;
+  }
+  
+  /* Loader animation */
+  .loader {
+    border: 6px solid rgba(0, 255, 255, 0.2);
+    border-top: 6px solid #00FFFF;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #00FFFF;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .info-box {
+    background: #2b0133;
+    border: 2px solid #6dfffa;
+    border-radius: 30px;
+    padding: 10px;
+    color: #ffffff;
+    width: 300px;
+    box-shadow: 0 0 15px #2f0836;
+    text-align: center;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(6px);
+  }
+  
+  .info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #9c27b0;
+  }
+  
+ 
+  
+  .info-box h3 {
+    color: #1ffff4;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px #7d268c;
+  }
+  
+  .info-box p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-shadow: 0 0 4px rgb(64, 5, 88);
+  }
+  
+  .info-box a {
+    color: #69f0ff;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0 0 5px #00ffff;
+  }
+  .info-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+  
