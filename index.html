@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LungGuard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Lung<span>Guard</span></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to <span>LungGuard</span></h1>
+            <p>Your AI-powered pneumonia detection assistant.</p>
+            <div class="buttons">
+                <a href="javascript:void(0)" onclick="scrollToSection('info')" class="btn">Learn More</a>
+                <a href="login.html" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info">
+        <h2>What is LungGuard?</h2>
+        <p>LungGuard is an AI-driven tool that analyzes lung X-rays to detect pneumonia with high accuracy.</p>
+
+        <div class="info-boxes">
+            <div class="box">
+                <img src="img4.png" alt="AI Icon">
+                <h3>AI-Powered Detection</h3>
+                <p>Advanced deep learning model detects pneumonia in real-time.</p>
+            </div>
+            <div class="box">
+                <img src="img3.png" alt="Secure Icon">
+                <h3>Secure & Private</h3>
+                <p>Your medical data is securely processed and encrypted.</p>
+            </div>
+            <div class="box">
+                <img src="img2.PNG" alt="Fast Results">
+                <h3>Efficient</h3>
+                <p>Analyzes lung X-rays to assist in pneumonia detection efficiently</p>
+            </div>
+        </div> 
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <span>1</span>
+                <p>Upload a lung X-ray image.</p>
+            </div>
+            <div class="step">
+                <span>2</span>
+                <p>AI model processes the image.</p>
+            </div>
+            <div class="step">
+                <span>3</span>
+                <p>Receive a diagnosis instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 LungGuard | AI-powered healthcare assistant.</p>
+    </footer>
+
+</body>
+</html>
