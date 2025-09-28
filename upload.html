@@ -7,38 +7,39 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="upload-container">
-        <h1>Upload Lung X-ray for Diagnosis</h1>
-        <form id="uploadForm">
-          <input type="file" id="xrayImage" accept="image/*" required />
-          <button type="submit">Analyze</button>
-          <div class="result" id="resultText"></div>
+  <div class="upload-container">
+    <button id="logoutBtn" class="logout-button">Log Out</button>
+    <h1>Upload Lung X-ray for Diagnosis</h1>
 
-        </form>
-        <div class="info-section">
-          <div class="info-box">
-            <img src="img10.PNG" alt="Fast Results">
-            <h3>What is Pneumonia?</h3>
-            <p>Pneumonia is an infection that inflames the air sacs in one or both lungs.</p>
-          </div>
-        
-          <div class="info-box">
-            <img src="img11.PNG" alt="Fast Results">
-            <h3>How to Upload</h3>
-            <p>Select a clear lung X-ray image file (JPG or PNG) and click "Analyze" to receive a diagnosis instantly.</p>
-          </div>
-        
-          <div class="info-box">
-            <img src="img9.PNG" alt="Fast Results">
-            <h3>Contact</h3>
-            <p>Have questions or feedback? Reach out to us at <a href="mailto:support@lungguard.ai">support@lungguard.ai</a>.</p>
-          </div>
-        </div>
-        
-        
+    <form id="uploadForm">
+      <input type="text" id="patientId" name="patientId" placeholder="Enter Patient ID" required />
+
+      <input type="file" id="xrayImage" accept="image/*" required />
+
+      <button type="submit">Analyze</button>
+      <div class="result" id="resultText"></div>
+    </form>
+
+    <div class="info-section">
+      <div class="info-box">
+        <img src="img10.PNG" alt="What is Pneumonia">
+        <h3>What is Pneumonia?</h3>
+        <p>Pneumonia is an infection that inflames the air sacs in one or both lungs.</p>
       </div>
-      
-      
+
+      <div class="info-box">
+        <img src="img11.PNG" alt="How to Upload">
+        <h3>How to Upload</h3>
+        <p>Select a clear lung X-ray image file (JPG or PNG) and click "Analyze" to receive a diagnosis instantly.</p>
+      </div>
+
+      <div class="info-box">
+        <img src="img9.PNG" alt="Contact">
+        <h3>Contact</h3>
+        <p>Have questions or feedback? Reach out to us at <a href="mailto:support@lungguard.ai">support@lungguard.ai</a>.</p>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
