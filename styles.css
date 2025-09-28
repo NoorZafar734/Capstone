@@ -527,4 +527,36 @@ button.btn:hover {
     width: 50px;
     margin-bottom: 10px;
 }
+  .logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #1ffff4;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #1ffff4;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.logout-button:hover {
+  background: #d32f2f;
+}
+#uploadForm input[type="text"] {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
   
